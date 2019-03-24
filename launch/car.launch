@@ -1,0 +1,6 @@
+<launch>
+ <node pkg="joy" type="joy_node" name="joy_node"/>
+ <node pkg="car" type="joystick_car" name="joystick_car" output="screen"/>
+ <node pkg="car" type="cv_bridge_omnidirectional_cam_car" name="cv_bridge_omnidirectional_cam_car" output="screen"/>
+ <node pkg="car" type="car_support" name="car_support" output="screen"/>
+</launch>
